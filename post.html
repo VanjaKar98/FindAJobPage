@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post job</title>
+    <link rel="stylesheet" href="./dist/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <nav class="header__logo-container">
+          <a class="header__logo" href="./home.html"
+            ><img
+              src="https://cdn.prod.website-files.com/66f2f083f5b8de8e38f75505/66f2f083f5b8de8e38f75553_logo-new.svg"
+              alt="devtask"
+          /></a>
+          <a href="mailto:someone@example.com" class="link-contact">Contact</a>
+          <a href="./find.html" class="link-find">Find jobs</a>
+        </nav>
+        <a href="./post.html" class="link-post--small"
+          ><img
+            src="https://cdn.prod.website-files.com/66f2f083f5b8de8e38f75505/66f2f083f5b8de8e38f7553b_add-circle.svg"
+            alt=""
+          />Post a job</a
+        >
+      </div>
+    </header>
+    <main>
+      <section class="form">
+        <div class="form__info">
+          <h1>Post a job on Devtask</h1>
+          <p>
+            Post a job and reach +15,000 qualified professionals directly from
+            our newsletters and +160,000 from our website.
+            <span>We charge a single fee of $50 for post.</span>
+          </p>
+        </div>
+
+        <form class="form__input" method="post">
+          <div class="form__input--item">
+            <label for="title">Job title <span>*</span></label>
+            <input
+              id="title"
+              type="text"
+              placeholder="e.g. Senior Developer"
+              required
+            />
+          </div>
+
+          <div class="form__input--item">
+            <label for="location">Job location <span>*</span></label>
+            <input
+              id="location"
+              type="text"
+              placeholder="e.g. New York, USA"
+              required
+            />
+          </div>
+
+          <div class="form__input--item">
+            <label for="type">Job type <span>*</span></label>
+            <input
+              id="type"
+              type="text"
+              placeholder="e.g. full-time, part-time..."
+              required
+            />
+          </div>
+
+          <div class="form__input--item">
+            <label for="desc">Job description (URL) <span>*</span></label>
+            <input id="desc" type="text" placeholder="https://" required />
+            <span
+              >Please add a Google Docs URL or any other link to which we can
+              read the job description.</span
+            >
+          </div>
+
+          <div class="form__input--item">
+            <label for="apply">Where people can apply? <span>*</span></label>
+            <input id="apply" type="text" placeholder="https://" required />
+            <span
+              >A URL or email address to which applicants can send their
+              applications.</span
+            >
+          </div>
+
+          <div class="form__input--item">
+            <label for="web">Company website <span>*</span></label>
+            <input id="web" type="text" placeholder="https://" required />
+          </div>
+
+          <div class="form__input--item">
+            <label for="mail">Your email <span>*</span></label>
+            <input
+              id="mail"
+              type="email"
+              placeholder="email@domain.com"
+              required
+            />
+            <span
+              >Stays private. Used for internal communication and
+              invoicing.</span
+            >
+          </div>
+
+          <div class="form__input--item">
+            <p>Make your job stand out (recommended)</p>
+
+            <div class="form__input--item-radio">
+              <input id="1week" type="radio" name="spot" value="1week" />
+              <label for="1week"
+                >Spotlight 1 week ($100)
+                <span class="views">4x more views</span></label
+              >
+              <input id="4weeks" type="radio" name="spot" value="4weeks" />
+              <label for="4weeks"
+                >Spotlight 4 weeks ($250)
+                <span class="views">12x more views</span></label
+              >
+            </div>
+          </div>
+
+          <button type="submit" class="form__btn btn-submit">
+            Post job (starting at $50)
+          </button>
+          <span class="checkout"
+            >You will be sent an email with a Stripe checkout link.</span
+          >
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__info">
+        <div class="footer__info--copy">
+          <span>&#169; 2024 Devtask.</span>
+          <a href="">Privacy Policy</a>
+        </div>
+        <div class="footer__info--socials">
+          <a href="">
+            <img
+              src="https://cdn.prod.website-files.com/66f2f083f5b8de8e38f75505/66f2f083f5b8de8e38f7553c_x.svg"
+              alt="x"
+          /></a>
+          <a href="">
+            <img
+              src="https://cdn.prod.website-files.com/66f2f083f5b8de8e38f75505/66f2f083f5b8de8e38f7554e_instagram.svg"
+              alt="instagram"
+          /></a>
+          <a href="">
+            <img
+              src="https://cdn.prod.website-files.com/66f2f083f5b8de8e38f75505/66f2f083f5b8de8e38f7554f_youtube.svg"
+              alt="youtube"
+          /></a>
+          <a href="">
+            <img
+              src="https://cdn.prod.website-files.com/66f2f083f5b8de8e38f75505/66f2f083f5b8de8e38f75550_linkedin.svg"
+              alt="linkedin"
+          /></a>
+        </div>
+      </div>
+      <div class="footer__made">
+        <div class="footer__made--by">
+          Made by <a href=""> Riffmax</a> & Powered by <a href="">Webflow</a>
+        </div>
+        <div class="footer__made--links">
+          <ul>
+            <li><a href="">Style guide</a></li>
+            <li><a href="">Instructions</a></li>
+            <li><a href="">Changelog</a></li>
+            <li><a href="">Licences</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./src/js/post.js"></script>
+  </body>
+</html>
