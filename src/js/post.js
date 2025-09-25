@@ -13,6 +13,7 @@ form.addEventListener("submit", async (event) => {
     spotlight: form.querySelector('input[name="spot"]:checked')?.value || null,
   };
 
+  //+POST REQUEST API
   try {
     const API = "https://68d037faec1a5ff33826c70e.mockapi.io/jobs";
 
